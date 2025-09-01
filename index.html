@@ -6,6 +6,11 @@
 <meta name="description" content="YİME GAMES oyunları oynayın ve eğlencenin tadını çıkarın. Fruit Monster ve diğer oyunlarımızla hemen oyun dünyasına katılın.">
 <title>YİME GAMES - Oyunlarım</title>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+<!-- Google AdSense Script (Tekrar yok) -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1198714971337229"
+     crossorigin="anonymous"></script>
+
 <style>
 :root {
   --neon-primary: #00ffcc;
@@ -42,14 +47,7 @@ nav ul li a:hover { color:var(--neon-secondary); text-shadow:0 0 10px var(--neon
 .hero .cta-btn:hover { box-shadow:0 0 20px var(--neon-primary),0 0 40px var(--neon-glow); transform:scale(1.05) rotate(-1deg); }
 
 /* Neon Ziyaretçi Sayacı */
-.neon-counter {
-  margin-top: 40px;
-  font-size: 28px;
-  color: var(--neon-primary);
-  font-weight: 700;
-  text-shadow:0 0 5px var(--neon-primary),0 0 10px var(--neon-primary),0 0 20px var(--neon-primary),0 0 40px var(--neon-glow);
-  text-align: center;
-}
+.neon-counter { margin-top: 40px; font-size: 28px; color: var(--neon-primary); font-weight: 700; text-align: center; }
 
 /* Container - Oyunlar */
 .container { display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:25px; padding:60px 20px; max-width:1200px; margin:auto; }
@@ -58,7 +56,7 @@ nav ul li a:hover { color:var(--neon-secondary); text-shadow:0 0 10px var(--neon
 .game-card img { width:100%; aspect-ratio:16/9; object-fit:cover; border-bottom:2px solid var(--neon-primary); transition:transform 0.4s ease; }
 .game-card img:hover { transform:scale(1.05); }
 .game-card h2 { margin:15px; font-size:22px; color:var(--neon-primary); text-shadow:0 0 5px var(--neon-primary); }
-.game-card a { display:block; margin:15px; padding:12px; width:calc(100%-30px); text-align:center; border-radius:10px; background:none; border:2px solid var(--neon-primary); color:var(--neon-primary); font-size:16px; font-weight:bold; text-decoration:none; box-shadow:0 0 10px var(--neon-glow); transition:all 0.3s ease; }
+.game-card a { display:block; margin:15px; padding:12px; width:calc(100% - 30px); text-align:center; border-radius:10px; background:none; border:2px solid var(--neon-primary); color:var(--neon-primary); font-size:16px; font-weight:bold; text-decoration:none; box-shadow:0 0 10px var(--neon-glow); transition:all 0.3s ease; }
 .game-card a:hover { box-shadow:0 0 20px var(--neon-primary),0 0 40px var(--neon-glow); transform:scale(1.05); }
 
 /* Hakkımızda & Ekip */
@@ -120,7 +118,7 @@ footer .socials img:hover { transform:scale(1.3) rotate(-10deg); filter:drop-sha
   <!-- Neon Ziyaretçi Sayacı -->
   <div class="neon-counter">Ziyaretçi: <span id="count">0</span></div>
 
-  <!-- AdSense Reklam - Hero Altı -->
+  <!-- AdSense Hero Altı -->
   <div style="text-align:center; margin:20px 0;">
     <ins class="adsbygoogle"
          style="display:block"
@@ -136,8 +134,18 @@ footer .socials img:hover { transform:scale(1.3) rotate(-10deg); filter:drop-sha
 
 <!-- Oyunlar -->
 <div id="games" class="container">
+  <div class="game-card fade-in">
+    <img src="fruitmonster.png" alt="Fruit Monster Game">
+    <h2>Fruit Monster</h2>
+    <a href="https://yigitefebay8.itch.io/fruit-monster-game">Oyna</a>
+  </div>
+  <div class="game-card fade-in">
+    <img src="oyun2.jpg" alt="Başka Oyun">
+    <h2>Başka Oyun</h2>
+    <a href="oyun2/index.html">Oyna</a>
+  </div>
 
-  <!-- AdSense Reklam - Oyunlar Üstü -->
+  <!-- AdSense Oyunlar Altı -->
   <div style="text-align:center; margin:20px 0;">
     <ins class="adsbygoogle"
          style="display:block"
@@ -148,17 +156,6 @@ footer .socials img:hover { transform:scale(1.3) rotate(-10deg); filter:drop-sha
     <script>
          (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
-  </div>
-
-  <div class="game-card fade-in">
-    <img src="fruitmonster.png" alt="Fruit Monster Game">
-    <h2>Fruit Monster</h2>
-    <a href="https://yigitefebay8.itch.io/fruit-monster-game">Oyna</a>
-  </div>
-  <div class="game-card fade-in">
-    <img src="oyun2.jpg" alt="Başka Oyun">
-    <h2>Başka Oyun</h2>
-    <a href="oyun2/index.html">Oyna</a>
   </div>
 </div>
 
@@ -200,19 +197,6 @@ footer .socials img:hover { transform:scale(1.3) rotate(-10deg); filter:drop-sha
 
 <!-- Footer -->
 <footer>
-  <!-- AdSense Reklam - Footer Üstü -->
-  <div style="text-align:center; margin:20px 0;">
-    <ins class="adsbygoogle"
-         style="display:block"
-         data-ad-client="ca-pub-1198714971337229"
-         data-ad-slot="9522307118"
-         data-ad-format="auto"
-         data-full-width-responsive="true"></ins>
-    <script>
-         (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
-  </div>
-
   <p>© 2025 YİME GAMES | Tüm hakları saklıdır.</p>
   <div class="socials">
     <a href="#"><img src="discord.png" alt="Discord"></a>
@@ -260,17 +244,7 @@ form.addEventListener('submit', e => {
 const counterElement = document.getElementById('count');
 const neonCounter = document.querySelector('.neon-counter');
 
-function updateNeonGlow(count) {
-  const glow = Math.min(5 + count, 80);
-  neonCounter.style.textShadow = `
-    0 0 ${glow/4}px var(--neon-primary),
-    0 0 ${glow/2}px var(--neon-primary),
-    0 0 ${glow}px var(--neon-primary),
-    0 0 ${glow*1.5}px var(--neon-glow)
-  `;
-}
-
-function updateNeonColor(count) {
+function updateNeon(count){
   const hue = Math.min(160 + count, 280);
   const color = `hsl(${hue},100%,50%)`;
   neonCounter.style.color = color;
@@ -287,20 +261,17 @@ fetch('https://api.countapi.xyz/hit/yimegames/visits')
   .then(data => {
     const count = data.value;
     counterElement.innerText = count;
-    updateNeonGlow(count);
-    updateNeonColor(count);
+    updateNeon(count);
   })
-  .catch(err => {
-    console.warn("API yüklenmedi, localStorage fallback kullanılıyor.");
+  .catch(() => {
     let count = parseInt(localStorage.getItem('visitorCount')) || 0;
     count++;
     localStorage.setItem('visitorCount', count);
     counterElement.innerText = count;
-    updateNeonGlow(count);
-    updateNeonColor(count);
+    updateNeon(count);
   });
 
-// Flicker animasyonu
+// Flicker animasyonu (hafif)
 setInterval(() => {
   const flicker = Math.random() * 5;
   const currentColor = neonCounter.style.color || 'hsl(160,100%,50%)';
@@ -312,8 +283,5 @@ setInterval(() => {
   `;
 }, 500);
 </script>
-
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1198714971337229"
-     crossorigin="anonymous"></script>
 </body>
 </html>
